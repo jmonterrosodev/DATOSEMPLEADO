@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #141414;
+  color: #e2e8f0; 
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  color: #e2e8f0;
+}
+
+
+input, select, textarea {
+  background-color: #2b2b2b;
+  color: #e2e8f0;
+  border: 1px solid #4a4a4a;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #5a5a5a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #4a4a4a;
+}
+
+th {
+  background-color: #2b2b2b;
+  font-weight: bold;
+  color: #e2e8f0;
+}
+
+td {
+  background-color: #1f1f1f;
+  color: #bebebe;
+  font-size: 0.9rem;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
